@@ -6,6 +6,7 @@ import { PageContentComponent } from './page-content.component';
   declarations: [PageContentComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [PageContentComponent]
 })
 export class PageContentModule { }
