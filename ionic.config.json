@@ -1,0 +1,7 @@
+{
+  "name": "BudgedIonic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
