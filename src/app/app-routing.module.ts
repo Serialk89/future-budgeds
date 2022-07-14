@@ -4,11 +4,12 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule),
+    pathMatch: 'full'
   },
   {
-    path: 'login',
-    loadChildren: () => import('./pages/unrolled/login/login.module').then( m => m.LoginModule)
+    path: 'unrolled',
+    loadChildren: () => import('./pages/unrolled/unrolled.module').then( m => m.UnrolledModule)
   },
   {
     path: '',

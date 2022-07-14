@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { InputLabelComponent } from './input-label.component';
 import { FormsModule } from '@angular/forms';
+import { InputComponent } from './input.component';
 
 @NgModule({
-  declarations: [InputLabelComponent],
+  declarations: [InputComponent],
   imports: [
     CommonModule,
     FormsModule
   ],
-  exports: [InputLabelComponent]
+  exports: [InputComponent]
 })
-export class InputLabelModule { }
+export class InputModule { }

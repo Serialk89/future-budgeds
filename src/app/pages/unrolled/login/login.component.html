@@ -10,7 +10,10 @@
             <div class="text-white text-opacity-50 text-center mb-4">
               Por su protección, ingresa tus datos de acceso.
             </div>
-            <app-input-label [label]="'Email'"></app-input-label>
+            <app-form-control>
+              <app-label label="Email" [required]="true"></app-label>
+              <app-input></app-input>
+            </app-form-control>
             <div class="mb-3">
               <div class="d-flex">
                 <a href="#" class="ms-auto text-white text-decoration-none text-opacity-50">Olvido la contraseña?</a>
@@ -18,7 +21,7 @@
               <input type="password" class="form-control form-control-lg bg-white bg-opacity-5" value="" placeholder="" />
             </div>
             <app-checkbox label="Recuérdame"></app-checkbox>
-            <button type="submit" class="btn btn-outline-theme btn-lg d-block w-100 fw-500 mb-3">Entrar</button>
+            <app-button label="Entrar" onClick="onSubmit"></app-button>
             <div class="text-center text-white text-opacity-50">
               No tienes cuenta todavía? <a href="page_register.html">Registrase</a>.
             </div>
